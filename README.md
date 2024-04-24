@@ -1,1 +1,1 @@
- # DSA from scratch 
+# DSA from Scratch
