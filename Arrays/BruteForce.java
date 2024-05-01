@@ -11,10 +11,10 @@ public class BruteForce {
         for(int j=0; j<arr.length; j++) {
           int currentSum = 0;
             for(int k=i; k<=j; k++) {
-                currentSum += arr[k];
+              currentSum += arr[k];   // current sum updated
             }
             if(currentSum > maxSum) {
-                maxSum = currentSum;
+              maxSum = currentSum;    // swap
             }
         }
     }
