@@ -13,6 +13,7 @@ public class Palindrome {
         }
         return true;
     }
+    
     // Main.java
     public static void main(String[] args) {
         String str = "madam";
