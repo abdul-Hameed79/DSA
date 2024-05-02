@@ -13,10 +13,10 @@ public class Palindrome {
         }
         return true;
     }
-    
+
     // Main.java
     public static void main(String[] args) {
-        String str = "madam";
+        String str = "MADAM";
 
         // Function call
         System.out.println(isPalindrome(str));
