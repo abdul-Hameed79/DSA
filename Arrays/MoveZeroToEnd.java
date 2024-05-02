@@ -23,8 +23,10 @@ public class MoveZeroToEnd {
     // Main.java
     public static void main(String[] args) {
         int[] nums = {0, 1, 0, 3, 12, 0, 2};
+
         // Function call
         moveZerosToEnd(nums);
+        
         // Display the output
         System.out.println("Array after moving zeros to end: " + Arrays.toString(nums));    // Output: 1, 3, 12, 0, 0, 0
     }
