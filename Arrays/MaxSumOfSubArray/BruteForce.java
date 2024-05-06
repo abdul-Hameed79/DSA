@@ -1,10 +1,11 @@
 // Write a java program to print maximum sum of an array using brute force algorithm
+// Time Complexity => O(n^2)   &&  Space Complexity => O(1)
 
 package Arrays.MaxSumOfSubArray;
 
 public class BruteForce {
     // Function to find max sum of sub array
-    static void findMaxSum(int[] arr) {
+    static int findMaxSum(int[] arr) {
         // initial value of maxSum
         int maxSum = Integer.MIN_VALUE;     
         for(int i=0; i<arr.length; i++) {
@@ -16,7 +17,7 @@ public class BruteForce {
             }
             maxSum = Math.max(currSum, maxSum);
         }
-        System.out.println("max sum of subarray is: " + maxSum);
+        return maxSum;   
     }
 
     // Main.java
@@ -24,6 +25,9 @@ public class BruteForce {
         int[] nums = {-2, 4, -6, 8, 10};
 
         // Function calling
-        findMaxSum(nums);
+        int maxSum = findMaxSum(nums);
+
+        // Display the maximum sum of subarray
+        System.out.println("Max sum of sub array is: " + maxSum);
     }
 }
