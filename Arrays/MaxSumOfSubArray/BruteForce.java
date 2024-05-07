@@ -1,22 +1,28 @@
 // Write a java program to print maximum sum of an array using brute force algorithm
-// Time Complexity => O(n^2)   &&  Space Complexity => O(1)
+// Time Complexity => O(n^3)   &&  Space Complexity => O(1)
 
 package Arrays.MaxSumOfSubArray;
 
 public class BruteForce {
     // Function to find max sum of sub array
     static int findMaxSum(int[] arr) {
+
         // initial value of maxSum
-        int maxSum = Integer.MIN_VALUE;     
+        int maxSum = Integer.MIN_VALUE;
+         // initial value of current sum
+         int currentSum = 0;
+
         for(int i=0; i<arr.length; i++) {
-            // initial value of current sum
-            int currSum = 0;                
             for(int j=i; j<arr.length; j++) {
-                // upddated current sum
-                currSum += arr[j];           
+                currentSum = 0;
+                for(int k=i; k<=j; k++) {
+                    currentSum += arr[k];
+                }           
             }
-            maxSum = Math.max(currSum, maxSum);
+            
+            maxSum = Math.max(currentSum, maxSum);
         }
+        
         return maxSum;   
     }
 
