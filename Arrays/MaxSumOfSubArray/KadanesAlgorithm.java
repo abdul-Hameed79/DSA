@@ -1,3 +1,6 @@
+// Write a java program to find the Maximum sum of sub Array using kadane's Algorithm
+// Time complexity => O(n)  &&  Space complexity => O(1)
+
 package Arrays.MaxSumOfSubArray;
 
 public class KadanesAlgorithm {
@@ -11,8 +14,11 @@ public class KadanesAlgorithm {
             // Updated maximum sum
             maxSum = Math.max(currSum, maxSum);
         }
+        
         return maxSum;
     }
+
+    // Main.java
     public static void main(String[] args) {
         int[] arr = {-2, -4, -5, -1, 0, -6};
 
