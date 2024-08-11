@@ -3,7 +3,7 @@
 package Arrays.BinarySearch;
 
 public class Example {
-    static int findTargetNum(int[] nums, int target) {
+    static int findLargetNum(int[] nums, int target) {
         int start = 0, end = nums.length-1;
 
         while(start < end) {
@@ -25,6 +25,6 @@ public class Example {
         int[] arr = {4, 6, 9, 12, 35, 45, 2};
         int target = 12;
 
-        System.out.println("Target found at index: " + findTargetNum(arr, target));
+        System.out.println("Target found at index: " + findLargetNum(arr, target));
     }
 }
