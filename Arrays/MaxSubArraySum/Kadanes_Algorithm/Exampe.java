@@ -2,12 +2,12 @@ package Arrays.MaxSubArraySum.Kadanes_Algorithm;
 
 public class Exampe {
     public static int findMaxSubArray(int[] arr) {
-        int currsum = 0, maxSum = Integer.MIN_VALUE;    // initial values
+        int currentsum = 0, maxSum = Integer.MIN_VALUE;    // initial values
 
         for(int i=0; i<arr.length; i++) {
-            currsum = Math.max(arr[i], currsum + arr[i]);   // updated current sum
+            currentsum = Math.max(arr[i], currentsum + arr[i]);   // updated current sum
 
-            maxSum = Math.max(maxSum, currsum);     // updated max sum
+            maxSum = Math.max(maxSum, currentsum);     // updated max sum
         }
 
         return maxSum;
