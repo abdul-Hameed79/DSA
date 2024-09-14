@@ -3,6 +3,13 @@
 package Arrays.Pairs;
 
 public class Example_1 {
+     // Main.java
+     public static void main(String[] args) {
+        int[] nums = {2, 4, 6, 8, 10};
+
+        findPairs(nums);
+    }
+    
     static void findPairs(int[] arr) {
         for(int i=0; i<arr.length; i++) {
             int current = arr[i];
@@ -11,12 +18,5 @@ public class Example_1 {
             }
             System.out.println();
         }
-    }
-
-    // Main.java
-    public static void main(String[] args) {
-        int[] nums = {2, 4, 6, 8, 10};
-
-        findPairs(nums);
     }
 }
